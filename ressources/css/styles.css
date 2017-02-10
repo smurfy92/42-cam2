@@ -1,0 +1,241 @@
+
+/*
+* RESET
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+body{
+	margin : 0 auto;
+	text-align:center;
+}
+main{
+	margin : 0 auto;
+}
+img{
+	max-width: 100%;
+}
+
+/*
+* MY CSS
+*/
+
+.title-login{
+	background-color: #2566e7;
+	font-size: 30px;
+	color:white;
+	padding: 20px 20px;
+	margin-bottom: 30px;
+}
+
+.menu{
+	background-color: #2566e7;
+	display:flex;
+	flex-direction: row;
+	margin-bottom: 30px;
+}
+	.menu h1{
+		font-size: 30px;
+	}
+	.menu div{
+		padding: 20px 20px;
+		line-height: 20px;
+	}
+		.menu div a{
+			color: white;
+		}
+.connect{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.register, .login{
+	display:flex;
+	flex-direction: column;
+	margin-right: 10px ;
+	background-color: #2566e7;
+	color :white;
+	padding: 30px 20px;
+	border-radius: 15px;
+}
+.register div, .login div{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-right: 10px;
+}
+.register label, .login label{
+	margin-right:10px;
+	margin-top:5px;
+}
+.submit{
+	margin-top:10px;
+	width:30%;
+}
+.login-title{
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+footer{
+	padding:20px 20px;
+	margin:20px 0;
+	bottom: 0;
+	background-color: #2566e7;
+	text-align: right;
+}
+
+.main{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+	.camera{
+		margin-left: 10%;
+	}
+
+	.filters{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.filter{
+		border-top : 1px solid black;
+		border-bottom : 1px solid black;
+		width:64px;
+		height: 64px;
+	}
+	.filter:first-child{
+		border-left : 1px solid black;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+	}
+	.filter:last-child{
+		border-right : 1px solid black;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+
+
+
+.sidebar{
+	float:right;
+}
+.selected{
+	border:2px solid green !important;
+}
+
+#filter-palmier{
+	margin-left: 11.5%;
+	width: 240px;
+	position: absolute;
+}
+#filter-pokeball{
+	margin-left: 11.5%;
+	width: 240px;
+	position: absolute;
+}
+#filter-glasses{
+	margin-left: 11.5%;
+	width: 240px;
+	position: absolute;
+}
+
+.hide{
+	visibility: hidden;
+}
+
+.photo{
+	width : 20%;
+	display: inline-block;
+	margin: 10px 10px;
+}
+	.photo img{
+		max-width: 160px;
+		max-height: 160px;
+		display: block;
+		margin: 0 auto;
+	}
+	.comments{
+		height:100px;
+		overflow-y:scroll;
+		border:1px solid black;
+		width:105%;
+		text-align: left;
+	}
+
+.photos{
+	display:flex;
+	flex-direction:column;
+	max-height: 300px;
+	height: 300px;
+	overflow: scroll;
+}
+
+.shot{
+	width:50%;
+	margin: 0 auto;
+	display:block;
+}
+
+.save{
+	margin:5px auto;
+}
+
+
+.reset{
+	width:30%;
+	margin:0 auto;
+}
+
+
+
+
+
+
