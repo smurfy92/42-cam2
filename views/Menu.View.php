@@ -1,5 +1,5 @@
 <div class="menu">
-	<div><h1><a href="Home">Camagru</a></h1></div>
-	<div><a href="Gallery">Gallery</a></div>
-	<div><a href="Disconnect">Disconnect</a></div>
+	<h1><div id="Home" class="button-menu">Camagru</div></h1>
+	<div id="Gallery" class="button-menu">Gallery</div>
+	<div id="Disconnect" class="button-menu">Disconnect</div>
 </div>

@@ -92,7 +92,8 @@ function dellike(id, user_id)
   prev.addEventListener('click', function(ev){
     url = window.location.href.split("/");
     if (url[5] && url[5] >=1)
-      window.location.href ="/camagru/Gallery/"+(url[5] - 1);
+      console.log(url)
+      window.location.href ="/"+url[3]+"/Gallery/" + (url[5] - 1);
     ev.preventDefault();
   }, false);
 
@@ -101,10 +102,10 @@ function dellike(id, user_id)
     if (url[5] && url[5] > 0)
     {
 
-      window.location.href = "/camagru/Gallery/"+(parseInt(url[5]) + 1);
+      window.location.href = "/"+url[3]+"/Gallery/"+(parseInt(url[5]) + 1);
     }
     else
-      window.location.href = '/camagru/Gallery/1';
+      window.location.href = "/"+url[3]+"/Gallery/1";
     console.log("next clicked");
     ev.preventDefault();
   }, false);

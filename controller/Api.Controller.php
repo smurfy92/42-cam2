@@ -73,6 +73,11 @@ $data = json_decode(file_get_contents('php://input'), true);
 
 if ($router->params[1] == "addcomment" && $data["id"] && $data["user_id"] && $data["value"])
 {
+	if (!preg_match("/^[a-zA-Z0-9_.-]*$/", $data["value"]))
+	{
+		echo "comment can contain only letters ans numbers";
+		exit;
+	}
 	$stmt = $db->prepare("INSERT INTO comments (id, image_id, user_id, text) VALUES (NULL, :image_id, :user_id, :text)");
 	$stmt->bindParam(':image_id', $data["id"]);
 	$stmt->bindParam(':user_id', $data["user_id"]);

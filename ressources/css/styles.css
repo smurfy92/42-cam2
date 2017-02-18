@@ -234,7 +234,10 @@ footer{
 	margin:0 auto;
 }
 
-
+.button-menu{
+	cursor:pointer;
+	color:white;
+}
 
 
 

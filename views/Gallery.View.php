@@ -68,4 +68,5 @@ while ($start < $end)
 </div>
 <script><?php include("ressources/js/xhr.js"); ?></script>
 <script><?php include("ressources/js/gallery.js"); ?></script>
+<script><?php include("ressources/js/menu.js") ?></script>
 <?php include("views/Footer.View.php"); ?>
